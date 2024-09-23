@@ -1,0 +1,197 @@
+* {
+   margin: 0; 
+}
+
+header {
+    padding: 20px 56px 20px 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    padding: 10px 24px;
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+}
+
+.link:active {
+    color: rebeccapurple;
+}
+.article {
+    display: flex;
+    align-items: center; 
+    height: 500px;
+    background-image: url('../images/factory-with-power-plant-green-plant-background.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; /* Optional: Cover the entire element */
+    /* fill:red; */
+}
+
+.article div {
+   padding-left: 56px;
+   width: 800px; 
+   /* background:; */
+}
+
+.article p {   
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.section_paragraph {
+    display: flex;
+    align-items: center;
+    /* background: red; */
+    height: 150px;
+    padding-left: 56px;
+}
+
+.section_paragraph p {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.container {
+    display: grid;
+    gap: 32px;
+    row-gap: 32px;
+    max-height: 1000px;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px ;
+    grid-template-columns: 50% 50%;
+    margin: 0 56px 0 56px;  
+}
+
+@media(max-width: 768px) {
+    .container {
+        display: grid;
+        gap: 32px;
+        row-gap: 32px;
+        max-height: 2500px;
+        grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px ;
+        grid-template-columns: 100%;
+        margin: 0 56px 0 56px;  
+    }
+    footer {
+        display: flex;
+        /* position: fixed; */
+        flex-direction: row;
+        justify-content: space-between;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 36px 20px 36px 20px;
+        color: white;
+        background: rgba(24, 34, 48, 1);
+        z-index: 3;
+    }
+}
+
+.real {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background: green; */
+    background: rgb(249, 250, 251);
+    border-radius: 8px;
+}
+
+.fake {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    background: rgb(249, 250, 251);
+    border-radius: 8px;
+    z-index: 1;
+    font-size: 18px;
+}
+
+.real p , .fake p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.real a , .fake a {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.details-btn {
+    display: grid;
+    place-items: center;
+    height: 35px;
+    width: max-content;
+    border-radius: 50px;
+    padding: 0 16px 0 16px;
+    border: 1px solid rgba(234, 236, 240, 1);
+}
+
+.details-btn:hover {
+    background: rgba(113, 123, 188, 1);
+}
+
+.fake p , .fake a  {
+    margin: 24px;
+}
+
+.opacity-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  rgba(236, 234, 250, 0.95);
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.opacity-content {
+    display: grid;
+    place-items: center;
+    height: 40px;
+    width: 130px;
+    border-radius: 50px;
+    background: rgba(113, 123, 188, 1);
+    
+}
+
+.stack-container {
+    position: relative;
+}
+
+.stack-box {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    padding: 0px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    /* position: fixed; */
+    flex-direction: row;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 36px 320px 36px 320px;
+    color: white;
+    background: rgba(24, 34, 48, 1);
+    z-index: 3;
+}
+
+.img {
+    height: 50px;
+    /* background: #ff0; */
+}
+
+footer p {
+    text-align: end;
+}
