@@ -10,7 +10,7 @@
     <body>
         <header>
             <span>
-                <img src="assets/images/logo_blue.png" alt="Sanoat Korxonalari Logo">
+                <img src="assets/images/logo_blue.svg" alt="Sanoat Korxonalari Logo">
             </span>
             <nav>
                 <span class="navigation">
@@ -23,24 +23,30 @@
                     <a href="#" class="link">Qo'llanma</a>
                 </span>
             </nav>
-            <form>
-                <select id="countries" name="countries" class="language-selector">
-                    <option value="уз">ЎЗБ</option>
-                    <option value="uz">UZB</option>
-                    <option value="us">ENG</option>
-                    <option value="tr">TRK</option>
-                    <option value="de">GER</option>
+            <div class="language-box row">
+                <img src="assets/icons/UZ.svg" alt="flag">
+                <form>
+                  <select id="countries" name="countries" class="language-selector">
+                        <option value="уз">Ўзбек</option>
+                        <option value="uz">O'zbek</option>
+                        <option value="us">English</option>
+                        <option value="tr">Turkçe</option>
+                        <option value="de">Deutsch</option>
                 </select>
-            </form>
+                </form>
+                <img src="assets/icons/chevron-down_black.svg" alt="flag">
+            </div>
         </header> 
         <mark>
-             <div>
-                <a href="dashboard.html" class="back-btn">←</a>
-             </div>
+             <a href="dashboard.html" class="back-btn"><img src="assets/icons/arrow-left.svg" alt=""></a>
              <p>Республика саноат корхоналари тўғрисида маълумот</p>
         </mark>
         <section class="section_paragraph large">
             <p>01.08.2024 йил ҳолатига кўра</p>
+            <div class="row">
+                <img src="assets/icons/excel.svg" alt="exel">
+                <p>Юклаб олиш</p>
+             </div>
         </section>
         <table class="custom-table">
             <thead>
@@ -75,7 +81,7 @@
                </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr class="overall">
                 <td>Жами</td>
                 <td>0000</td>
                 <td>0000</td>
